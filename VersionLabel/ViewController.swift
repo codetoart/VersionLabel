@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let vl = VersionLabel()
+        vl.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(vl)
+        NSLayoutConstraint.activate([
+            vl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            vl.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
-
-
 }
-
