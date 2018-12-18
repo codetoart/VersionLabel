@@ -15,7 +15,7 @@ private struct Constant {
     static let bundleNameKey = "CFBundleName"
 }
 
-class VersionLabel: UILabel {
+public class VersionLabel: UILabel {
 
     /*
     // Only override draw() if you perform custom drawing.
