@@ -25,7 +25,7 @@ public class VersionLabel: UILabel {
     }
     */
     
-    override func didMoveToSuperview() {
+    public override func didMoveToSuperview() {
         super.didMoveToSuperview()
         text = versionText()
     }
